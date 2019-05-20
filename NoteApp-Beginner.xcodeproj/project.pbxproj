@@ -12,7 +12,6 @@
 		570B82332292C5E6006FC433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570B82312292C5E6006FC433 /* Main.storyboard */; };
 		570B82352292C5E8006FC433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 570B82342292C5E8006FC433 /* Assets.xcassets */; };
 		570B82382292C5E8006FC433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570B82362292C5E8006FC433 /* LaunchScreen.storyboard */; };
-		570B82432292C5E8006FC433 /* NoteApp_BeginnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570B82422292C5E8006FC433 /* NoteApp_BeginnerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +33,6 @@
 		570B82372292C5E8006FC433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		570B82392292C5E8006FC433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		570B823E2292C5E8006FC433 /* NoteApp-BeginnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NoteApp-BeginnerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		570B82422292C5E8006FC433 /* NoteApp_BeginnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteApp_BeginnerTests.swift; sourceTree = "<group>"; };
 		570B82442292C5E8006FC433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +88,6 @@
 		570B82412292C5E8006FC433 /* NoteApp-BeginnerTests */ = {
 			isa = PBXGroup;
 			children = (
-				570B82422292C5E8006FC433 /* NoteApp_BeginnerTests.swift */,
 				570B82442292C5E8006FC433 /* Info.plist */,
 			);
 			path = "NoteApp-BeginnerTests";
@@ -206,7 +203,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570B82432292C5E8006FC433 /* NoteApp_BeginnerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
