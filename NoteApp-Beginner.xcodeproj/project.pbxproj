@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		570B822E2292C5E6006FC433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570B822D2292C5E6006FC433 /* AppDelegate.swift */; };
-		570B82302292C5E6006FC433 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570B822F2292C5E6006FC433 /* ViewController.swift */; };
-		570B82332292C5E6006FC433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570B82312292C5E6006FC433 /* Main.storyboard */; };
 		570B82352292C5E8006FC433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 570B82342292C5E8006FC433 /* Assets.xcassets */; };
 		570B82382292C5E8006FC433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570B82362292C5E8006FC433 /* LaunchScreen.storyboard */; };
+		574C295D2292D68500374B53 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C295C2292D68500374B53 /* Note.swift */; };
+		574C295F2292D6FA00374B53 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C295E2292D6FA00374B53 /* NoteViewController.swift */; };
+		57C2E9C72298FAB200612979 /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C2E9C62298FAB200612979 /* NoteListViewController.swift */; };
+		57C2E9C92298FB7D00612979 /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C2E9C82298FB7D00612979 /* NoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,13 +29,15 @@
 /* Begin PBXFileReference section */
 		570B822A2292C5E6006FC433 /* NoteApp-Beginner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NoteApp-Beginner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		570B822D2292C5E6006FC433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		570B822F2292C5E6006FC433 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		570B82322292C5E6006FC433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		570B82342292C5E8006FC433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		570B82372292C5E8006FC433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		570B82392292C5E8006FC433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		570B823E2292C5E8006FC433 /* NoteApp-BeginnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NoteApp-BeginnerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		570B82442292C5E8006FC433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		574C295C2292D68500374B53 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		574C295E2292D6FA00374B53 /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		57C2E9C62298FAB200612979 /* NoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
+		57C2E9C82298FB7D00612979 /* NoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +80,13 @@
 			isa = PBXGroup;
 			children = (
 				570B822D2292C5E6006FC433 /* AppDelegate.swift */,
-				570B822F2292C5E6006FC433 /* ViewController.swift */,
-				570B82312292C5E6006FC433 /* Main.storyboard */,
 				570B82342292C5E8006FC433 /* Assets.xcassets */,
 				570B82362292C5E8006FC433 /* LaunchScreen.storyboard */,
 				570B82392292C5E8006FC433 /* Info.plist */,
+				574C295C2292D68500374B53 /* Note.swift */,
+				57C2E9C62298FAB200612979 /* NoteListViewController.swift */,
+				574C295E2292D6FA00374B53 /* NoteViewController.swift */,
+				57C2E9C82298FB7D00612979 /* NoteController.swift */,
 			);
 			path = "NoteApp-Beginner";
 			sourceTree = "<group>";
@@ -176,7 +182,6 @@
 			files = (
 				570B82382292C5E8006FC433 /* LaunchScreen.storyboard in Resources */,
 				570B82352292C5E8006FC433 /* Assets.xcassets in Resources */,
-				570B82332292C5E6006FC433 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,8 +199,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570B82302292C5E6006FC433 /* ViewController.swift in Sources */,
+				57C2E9C72298FAB200612979 /* NoteListViewController.swift in Sources */,
+				574C295F2292D6FA00374B53 /* NoteViewController.swift in Sources */,
 				570B822E2292C5E6006FC433 /* AppDelegate.swift in Sources */,
+				574C295D2292D68500374B53 /* Note.swift in Sources */,
+				57C2E9C92298FB7D00612979 /* NoteController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,14 +225,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		570B82312292C5E6006FC433 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				570B82322292C5E6006FC433 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		570B82362292C5E8006FC433 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
